@@ -1,0 +1,53 @@
+.adderContainer {
+  width: 500px;
+  height: 400px;
+  background-color: yellowgreen;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px 5px yellowgreen;
+  margin-bottom: 5px;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  z-index: 2;
+}
+
+#addTitle {
+  justify-content: center;
+  display: flex;
+  font-size: 3ch;
+  margin-bottom: 10px;
+}
+
+#formContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#formContainer label {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+#formContainer input {
+  height: 20px;
+  border-radius: 5px;
+}
+
+#formContainer select {
+  height: 20px;
+  border-radius: 5px;
+}
+
+#formContainer button {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(101, 100, 100);
+  margin-top: 15px;
+  margin-bottom: 25px;
+}

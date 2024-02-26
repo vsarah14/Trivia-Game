@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trivia</title>
+
+    <link rel="stylesheet" href="trivia.css" type="text/css" />
+    <link rel="stylesheet" href="form.css" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+    <script src="trivia.js" type="text/javascript"></script>
+    <script src="form.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="spaceContainer"></div>
+    <div class="homeContainer">
+      <div class="titleContainer">
+        <h1 id="gameTitle">Trivia</h1>
+      </div>
+      <br />
+      <!--main page-->
+      <div class="gameContainer">
+        <div class="fieldContainer">
+          <label id="fieldId">Number of questions:</label>
+          <input type="text" id="questionId" />
+        </div>
+        <div class="errorMessage" id="errorMessage"></div>
+
+        <div class="buttonContainer">
+          <button id="download">Download</button>
+          <button id="addQuestion">Add questions</button>
+        </div>
+
+        <!--adding a question-->
+        <div class="adderContainer">
+          <label id="addTitle">Add a question</label>
+
+          <form id="formContainer">
+            <label id="question">Question:</label>
+            <input type="text" id="questionText" /><br />
+
+            <label id="answer">Answer:</label>
+            <input type="text" id="answerText" /><br />
+
+            <label id="value">Value:</label>
+            <input type="text" id="valueText" /><br />
+
+            <label id="category">Category:</label>
+            <select id="categoryOptions">
+              <option value="Music">Music</option>
+              <option value="Geography">Geography</option>
+              <option value="History">History</option>
+              <option value="Famous">Famous</option>
+            </select>
+
+            <div class="errorForm" id="errorForm"></div>
+
+            <div class="buttonContainer">
+              <button id="addButton">Add</button>
+              <button id="cancelButton">Cancel</button>
+            </div>
+          </form>
+        </div>
+
+        <!--displaying the questions-->
+        <div class="question-container">
+          <label id="questionsId">Questions:</label>
+
+          <!--animation for loading questions-->
+          <div class="animationContainer">
+            <img id="loadingAnimation" src="snail.gif" class="hidden" />
+          </div>
+
+          <!--list of questions-->
+          <ul id="questionsList"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

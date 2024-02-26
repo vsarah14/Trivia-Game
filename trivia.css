@@ -1,0 +1,115 @@
+body {
+  background-color: lightgoldenrodyellow;
+  width: 1000px;
+  margin: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.spaceContainer {
+  height: 50px;
+  width: 1000px;
+}
+
+#gameTitle {
+  font-size: 6ch;
+  text-shadow: 2px 2px 4px yellowgreen;
+}
+
+.titleContainer {
+  text-align: center;
+}
+
+.homeContainer {
+  background-color: rgb(233, 224, 133);
+  padding: 20px;
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(101, 100, 100);
+  box-shadow: 0 0 10px 5px yellowgreen;
+  transform-origin: center center;
+}
+
+.gameContainer {
+  padding: 0px;
+  margin: 40px;
+}
+
+.errorMessage {
+  margin-top: 2px;
+  height: 13px;
+  color: red;
+}
+
+.fieldContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: 3ch;
+  justify-content: space-between;
+}
+
+#questionId {
+  border-radius: 5px;
+  width: 193px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(101, 100, 100);
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+#questionsId {
+  font-size: 3ch;
+  margin-left: 0;
+  margin-right: 330px;
+}
+
+.questionContainer {
+  display: flex;
+}
+
+.listItem {
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#loadingAnimation {
+  background-color: rgb(233, 224, 133);
+  width: 400px;
+  height: 400px;
+}
+
+.animationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invalid {
+  background-color: lightcoral;
+  color: white;
+}
+
+.errorForm {
+  margin-top: 2px;
+  height: 13px;
+  color: red;
+}
